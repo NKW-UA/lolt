@@ -1,0 +1,172 @@
+/* The Modal (background) */
+.modal-back {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content-back {
+    background-color: #fefefe;
+    margin: 1.8% auto; /* 15% from the top and centered */
+    width: 840px; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close-back {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-back:hover,
+  .close-back:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal-header-back {
+    display: flex;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #F5F5F5; 
+    margin-bottom: 30px; 
+    border-radius: 10px 10px 0 0;
+  }
+
+  .modal-header-back span {
+    width: 40px;
+    height: 40px;
+    margin: 30px 15px 30px 30px;
+    background-image: url(../images/back-h.png);
+  }
+
+  .modal-header-back .pio {
+    margin-top: 38px;
+    margin-bottom: 41px;
+  }
+
+  .modal-header-back .pio-1 {
+    margin-top: 38px;
+    margin-bottom: 41px;
+    opacity: 0.7; 
+    margin-left: 20px;
+  }
+
+  .modal-header-back #close {
+    background-image: url(../images/close.png); 
+    margin-top: 30px; 
+    margin-left: 553px;
+  }
+  .modal-content-back .content-back {
+    padding-top: 0; 
+    padding-left: 5px; 
+    padding-bottom: 10px; 
+    padding-right: 10px;
+  }
+
+  .modal-content-back .content-back .good { 
+    width: 180px; 
+    height: 180px; 
+    border-radius: 10px; 
+    border: none; 
+    margin-left: 20px; 
+    margin-bottom: 20px;
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    .modal-content-back {
+      width: 100%;
+      background-color: #F0F0F0;
+      border-radius: 0;
+      margin: 0;
+      height: 100%;
+
+    }
+    .modal-header-back {
+      display: flex;
+      position: absolute;
+      height: 50px;
+      width: 335px;
+      margin-left: 20px;
+      background-color: #fff; 
+      margin-bottom: 20px; 
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    .modal-header-back .pio {
+      margin-top: 15px;
+      margin-left: 10px;
+    }
+    .modal-header-back .pio-1 {
+      margin-top: 15px;
+    }
+    .modal-header-back #close {
+      background-image: url(../images/close.png); 
+      margin-top: 5px; 
+      margin-left: 100px;
+    }
+    .modal-header-back span{
+      width: 30px;
+      height: 30px;
+      background-size: 30px;
+      margin: 10px;
+    }
+    .modal-content-back .content-back {
+      padding-top: 0; 
+      padding-left: 5px; 
+      padding-bottom: 0px; 
+      padding-right: 0px;
+    }
+    .modal-content-back .content-back .good { 
+      width: 105px; 
+      height: 105px; 
+      border-radius: 10px; 
+      border: none; 
+      margin-left: 10px; 
+      margin-bottom: 10px;
+      background-color: #fff;
+      background-size: cover;
+    }
+    .modal-content-back .content-back .good:first-child,.good:nth-child(2),.good:nth-child(3) { 
+      margin-top: 100px;
+    }
+    @media only screen and (min-width: 414px){
+      .modal-header-back {
+        margin-left: 40px;
+      }
+      .modal-content-back .content-back {
+        padding-left: 25px;
+      }
+    }
+    @media only screen and (max-width: 320px){
+      .modal-header-back {
+        width: 277px;
+      }
+      .modal-header-back .pio {
+        font-size: 13px;
+      }
+      .modal-header-back .pio-1 {
+        font-size: 13px;
+      }
+      .modal-header-back #close {
+        margin-left: 65px;
+      }
+      .modal-content-back .content-back .good {
+        width: 85px;
+        height: 85px;
+      }
+    }
+  }
